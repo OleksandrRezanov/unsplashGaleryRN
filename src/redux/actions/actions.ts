@@ -1,9 +1,9 @@
-import {Action, AnyAction, Dispatch} from 'redux';
-import {User} from '../../types/User';
-import {ACTION_TYPES} from '../constants/ACTION_TYPES';
-import {UNSPLASH_API_KEY} from '../constants/UNSPLASH_API_KEY';
-import {ThunkDispatch} from 'redux-thunk';
-import {getNormalizedData} from '../../utils/getNormalizedData';
+import { Action, AnyAction, Dispatch } from 'redux';
+import { User } from '../../types/User';
+import { ACTION_TYPES } from '../constants/actionTypes';
+import { UNSPLASH_API_KEY } from '../constants/unsplashApiKey';
+import { ThunkDispatch } from 'redux-thunk';
+import { getNormalizedData } from '../../utils/getNormalizedData';
 
 export const fetchUsersPending = () => ({
   type: ACTION_TYPES.FETCH_USERS_PENDING,

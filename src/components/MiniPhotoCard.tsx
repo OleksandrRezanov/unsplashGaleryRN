@@ -1,13 +1,13 @@
 import React from 'react';
-import {View, Text, Image, StyleSheet, TouchableOpacity} from 'react-native';
-import {User} from '../types/User';
-import {useNavigation} from '@react-navigation/native';
-import {useAppDispatch} from '../redux/hooks';
-import {setSelectedPicture} from '../redux/actions/actions';
+import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native';
+import { User } from '../types/User';
+import { useNavigation } from '@react-navigation/native';
+import { useAppDispatch } from '../redux/hooks';
+import { setSelectedPicture } from '../redux/actions/actions';
 
-interface Props extends Omit<User, 'id'> {}
+interface Props extends Omit<User, 'id'> { }
 
-const MiniPhotoCard: React.FC<Props> = ({photoUrl, title, author}) => {
+const MiniPhotoCard: React.FC<Props> = ({ photoUrl, title, author }) => {
   const navigation = useNavigation();
   const dispatch = useAppDispatch();
 
@@ -18,7 +18,8 @@ const MiniPhotoCard: React.FC<Props> = ({photoUrl, title, author}) => {
 
   return (
     <TouchableOpacity style={styles.container} onPress={handlePress}>
-      <Image source={{uri: photoUrl}} style={styles.image} />
+      <Image source={{ uri: photoUrl }} style={styles.image} />
+
       <View style={styles.textContainer}>
         <Text style={styles.title}>{title}</Text>
         <Text style={styles.author}>By: {author}</Text>

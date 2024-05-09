@@ -1,13 +1,11 @@
 import React from 'react';
-import {View, ActivityIndicator, StyleSheet} from 'react-native';
+import { View, ActivityIndicator, StyleSheet } from 'react-native';
 
-export const Loader: React.FC = () => {
-  return (
-    <View style={styles.container}>
-      <ActivityIndicator size="large" color="#0000ff" />
-    </View>
-  );
-};
+export const Loader: React.FC = () => (
+  <View style={styles.container}>
+    <ActivityIndicator size="large" color="#0000ff" />
+  </View>
+);
 
 const styles = StyleSheet.create({
   container: {

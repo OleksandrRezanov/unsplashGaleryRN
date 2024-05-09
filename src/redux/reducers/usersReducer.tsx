@@ -1,5 +1,5 @@
-import {State} from '../../types/State';
-import {ACTION_TYPES} from '../constants/ACTION_TYPES';
+import { State } from '../../types/State';
+import { ACTION_TYPES } from '../constants/actionTypes';
 
 const initialState: State = {
   users: [],

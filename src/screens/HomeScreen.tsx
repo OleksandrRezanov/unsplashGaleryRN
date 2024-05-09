@@ -1,10 +1,10 @@
-import React, {useEffect} from 'react';
-import {SafeAreaView, ScrollView} from 'react-native';
-import {fetchUsers} from '../redux/actions/actions';
+import React, { useEffect } from 'react';
+import { SafeAreaView, ScrollView } from 'react-native';
+import { fetchUsers } from '../redux/actions/actions';
 import MiniPhotoCard from '../components/MiniPhotoCard';
-import {useAppDispatch, useAppSelector} from '../redux/hooks';
-import {Loader} from '../components/Loader';
-import {Error} from '../components/Error';
+import { useAppDispatch, useAppSelector } from '../redux/hooks';
+import { Loader } from '../components/Loader';
+import { Error } from '../components/Error';
 
 export const HomeScreen: React.FC = () => {
   const users = useAppSelector(state => state.users);

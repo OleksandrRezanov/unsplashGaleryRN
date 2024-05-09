@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Image, StyleSheet, Dimensions} from 'react-native';
+import { View, Image, StyleSheet, Dimensions } from 'react-native';
 
 export const Error: React.FC = () => {
   return (
@@ -13,7 +13,7 @@ export const Error: React.FC = () => {
   );
 };
 
-const {width, height} = Dimensions.get('window');
+const { width, height } = Dimensions.get('window');
 
 const styles = StyleSheet.create({
   container: {
